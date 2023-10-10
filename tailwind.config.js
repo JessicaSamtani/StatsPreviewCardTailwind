@@ -14,8 +14,8 @@ module.exports = {
         lexend: ["Lexend Deca", "sans-serif"],
       },
       backgroundImage: {
-        desktopImage: "url('src/images/image-header-desktop.jpg')",
-        mobileImage: "url('src/images/image-header-mobile.jpg')",
+        desktopImage: "url('./images/image-header-desktop.jpg')",
+        mobileImage: "url('./images/image-header-mobile.jpg')",
       },
     },
   },
