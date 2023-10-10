@@ -1,13 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body class="bg-veryDarkBlue">
+    <div
+      class="main-wrapper flex flex-col justify-center items-center min-h-screen md:flex md:flex-row-reverse"
+    >
+      <div>
+        <img
+          class="bg-cover h-full flex justify-center items-center bg-no-repeat w-72 rounded-t-md rounded-r-md rounded-br-none rounded-bl-none md:bg-desktopImag md:rounded-t-none md:rounded-tr-lg md:rounded-br-lg md:w-[450px]"
+          src="images/image-header-mobile.jpg"
+          alt="mobile-image"
+        />
+      </div>
+
+      <div
+        class="text-wrapper bg-darkSaturatedBlue w-72 p-10 rounded-br-lg rounded-bl-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg md:w-[470px] md:h-[330px] md:p-16"
+      >
+        <h1
+          class="-mt-2 font-inter text-xl text-center mb-4 font-bold text-white md:text-left md:text-3xl md:mb-6"
+        >
+          Get <span class="text-softViolet">insights</span> that help your
+          business grow.
+        </h1>
+        <p
+          class="info text-statHeadings text-xs leading-normal text-center md:text-left md:w-72"
+        >
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <div
+          class="number-wrapper text-white text-center mt-10 md:flex md:justify-between md:w-72"
+        >
+          <div class="companies">
+            <h3 class="font-bold text-lg uppercase md:text-left">10k+</h3>
+            <p class="font-lexend text-[10px] uppercase mb-3 text-statHeadings">
+              companies
+            </p>
+          </div>
+
+          <div class="templates">
+            <h3 class="font-bold text-lg uppercase md:text-left">314</h3>
+            <p class="font-lexend text-[10px] uppercase mb-3 text-statHeadings">
+              templates
+            </p>
+          </div>
+
+          <div class="queries">
+            <h3 class="font-bold text-lg uppercase md:text-left">12m+</h3>
+            <p class="font-lexend text-[10px] uppercase mb-3 text-statHeadings">
+              queries
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
